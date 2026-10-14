@@ -6,9 +6,9 @@ export const profile: Profile = {
     company: "Deskdrive",
     location: "Langestraat 97/3, 2240 Zandhoven",
     role: "Software developer",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/oguzhan-güner-910681339",
     github: "https://github.com/s158897",
-    photo: "oguzhan.png",
+    photo: "oguzhan.jpeg",
 };
 
 // Zet nieuwe weken bovenaan. Nieuwe tags verschijnen automatisch in het filter.
@@ -16,6 +16,30 @@ export const profile: Profile = {
 // photos: [{ src: "/week-3.jpg", alt: "Beschrijving van de foto", caption: "Kort bijschrift" }],
 // codeBlocks: [{ title: "Mijn oplossing", language: "Java", code: "...", explanation: "Waarom dit werkte" }],
 export const posts: BlogPost[] = [
+    {
+        slug: "week-3",
+        number: "03",
+        category: "Development",
+        tags: ["Code", "Wins", "Fails", "Lessons learned"],
+        title: "Week 3: Formulieren, planning en API-debugging",
+        excerpt: "Verder bouwen aan DeskDrive Mobile met React Native en Expo. Deze week zat er vooral veel test- en debugwerk tussen.",
+        time: "2 min",
+        color: "rose",
+        sections: [
+            [
+                "Wat heb ik gedaan?",
+                "Ik heb de formuliervelden verder uitgewerkt en getest, zoekcategorieën aan gebruikersrechten gekoppeld en een persoonsfilter aan de planning toegevoegd. Ook heb ik opmerkingen bij taken en klanten toegevoegd en het aanmaken van taken aan de API gekoppeld. Verder heb ik de datum- en uurkiezers op iPhone en de leesbaarheid van de velden verbeterd."
+            ],
+            [
+                "Wat heb ik geleerd?",
+                "Ik heb geleerd om eerst te controleren wat de API echt terugstuurt. Een decimal-veld kwam bijvoorbeeld soms als integer binnen. Door veldtypes, request-URL's en responses te loggen, kon ik gerichter zoeken. Ook heb ik geleerd om lege resultaten apart af te handelen van ophaalfouten."
+            ],
+            [
+                "Waar liep ik tegenaan?",
+                "Expo bleef soms hangen bij het opstarten en de planning gaf niet altijd de verwachte gegevens terug. Ik heb een crash bij lege offertes opgelost en gezorgd dat een planningkaart de juiste taak opent. Bij offertes heb ik een laadindicator en een knop om opnieuw te proberen toegevoegd."
+            ],
+        ]
+    },
     {
         slug: "week-2",
         number: "02",
@@ -65,3 +89,5 @@ export const posts: BlogPost[] = [
         ]
     },
 ];
+
+
