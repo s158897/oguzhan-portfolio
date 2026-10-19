@@ -17,6 +17,30 @@ export const profile: Profile = {
 // codeBlocks: [{ title: "Mijn oplossing", language: "Java", code: "...", explanation: "Waarom dit werkte" }],
 export const posts: BlogPost[] = [
     {
+        slug: "week-4",
+        number: "04",
+        category: "Development",
+        tags: ["Code", "Wins", "Lessons learned"],
+        title: "Week 4: Slimmer zoeken en automatisch testen",
+        excerpt: "Zoektechnieken vergelijken voor ingesproken bedrijfsnamen, kennismaken met Selenium/Htmx en verder werken aan de planning.",
+        time: "2 min",
+        color: "green",
+        sections: [
+            [
+                "Wat heb ik gedaan?",
+                "Ik heb een proof of concept gemaakt voor zoeken met spraakherkenning. In PostgreSQL vergeleek ik onder andere pg_trgm, fonetische zoekmethodes en Levenshtein op ongeveer 10.000 records. Ook heb ik Selenium uitgeprobeerd op een HTMX-testpagina, pull-to-refresh toegevoegd aan de planning en met mijn partner branches samengevoegd."
+            ],
+            [
+                "Wat heb ik geleerd?",
+                "Niet elke zoekmethode werkt even goed bij verkeerd herkende bedrijfsnamen. Door nauwkeurigheid én snelheid te vergelijken, kon ik mijn keuzes beter onderbouwen. Ik heb meer geleerd over database-indexen en hoe ik met Selenium handmatige tests kan automatiseren. Daarnaast heb ik onderzocht hoe ik een JAR bouw en de geheugenfunctie overdraag aan de microservice van mijn partner."
+            ],
+            [
+                "Waar liep ik tegenaan?",
+                "Ik had geen rechtstreekse toegang tot de DeskDrive-database en backend. Daarom heb ik een aparte PostgreSQL-testomgeving opgezet. Bij de planning bleken taken voor andere resources wel opgeslagen, maar niet aanwezig in het API-antwoord. Ook moest ik bij het samenvoegen van onze branches meerdere mergeconflicten oplossen."
+            ],
+        ]
+    },
+    {
         slug: "week-3",
         number: "03",
         category: "Development",
@@ -89,5 +113,6 @@ export const posts: BlogPost[] = [
         ]
     },
 ];
+
 
 
