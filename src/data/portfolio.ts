@@ -17,6 +17,54 @@ export const profile: Profile = {
 // codeBlocks: [{ title: "Mijn oplossing", language: "Java", code: "...", explanation: "Waarom dit werkte" }],
 export const posts: BlogPost[] = [
     {
+        slug: "week-6",
+        number: "06",
+        category: "Development",
+        tags: ["Code", "Wins", "Lessons learned"],
+        title: "Week 6: QR-scannen, zoeken en wizardknoppen",
+        excerpt: "Deze week heb ik de wizard uitgebreid en gewerkt aan herbruikbare componenten en het onderhoud van DeskDrive Mobile.",
+        time: "2 min",
+        color: "rose",
+        sections: [
+            [
+                "Wat heb ik gedaan?",
+                "Ik heb een QR-scanner aan de interventiewizard toegevoegd en een herbruikbare zoekbalk gemaakt voor verschillende lijsten en detailtabs. Ook heb ik wizardknoppen aan de backend gekoppeld, met laadstatus, foutmeldingen en bescherming tegen dubbel klikken. Verder heb ik packages bijgewerkt en het versienummer op de homepagina gezet."
+            ],
+            [
+                "Wat heb ik geleerd?",
+                "Ik heb geleerd hoe knoppen via JSON vanuit de backend ingesteld kunnen worden en hoe gescande waarden en knopacties naar de API gaan. Daarnaast heb ik onderzocht hoe de app kan controleren of er een nieuwere versie in de stores staat. Ook heb ik meer geleerd over Android-buildoptimalisatie met R8 en het controleren van dependencies."
+            ],
+            [
+                "Waar liep ik tegenaan?",
+                "De wizard ging bij sommige keuzevelden meteen naar de volgende stap. Ik heb onderzocht hoe de selectie eerst opgeslagen kan worden, zodat de gebruiker zelf op Volgende klikt. Een Android-testbuild werd geblokkeerd doordat het Expo-account geen projecttoegang had. Daardoor kon ik de nieuwe optimalisatiescore nog niet controleren."
+            ],
+        ]
+    },
+    {
+        slug: "week-5",
+        number: "05",
+        category: "Development",
+        tags: ["Code", "Wins", "Lessons learned"],
+        title: "Week 5: De wizard, navigatie en een Expo-update",
+        excerpt: "Van 19 tot en met 23 oktober heb ik DeskDrive Mobile verder verbeterd, van handtekeningen in de wizard tot de terugnavigatie.",
+        time: "2 min",
+        color: "sand",
+        sections: [
+            [
+                "Wat heb ik gedaan?",
+                "Ik heb opmerkingen toegevoegd aan verschillende schermen en de documenten- en handtekeningtabs hersteld. In de wizard zijn bestaande foto's en bijlagen nu zichtbaar en kun je een handtekening invoeren. Daarnaast heb ik tellers vooraf laten laden met maximaal twee API-aanvragen tegelijk, Maestro-testbestanden toegevoegd en Expo bijgewerkt van SDK 57 naar 58."
+            ],
+            [
+                "Wat heb ik geleerd?",
+                "Ik heb meer geleerd over het spreiden van API-aanvragen en het consistent maken van navigatie in React Native. Bij de Expo-update moest ik ook dependencies en compatibiliteitscode aanpassen. Daarna heb ik de Android- en iOS-bundels gecontroleerd. Met Maestro heb ik verder gewerkt aan het voorbereiden van automatische tests."
+            ],
+            [
+                "Waar liep ik tegenaan?",
+                "De opstartnavigatie op Android en de terugknoppen werkten niet overal zoals verwacht. Gebruikers kwamen soms onbedoeld op het homescherm terecht. Ik heb de terugnavigatie gelijkgetrokken en die doorverwijzing opgelost. Ook werd de wizardlijst niet altijd vernieuwd; die wordt nu opnieuw opgehaald wanneer je de lijst opent."
+            ],
+        ]
+    },
+    {
         slug: "week-4",
         number: "04",
         category: "Development",
@@ -113,6 +161,8 @@ export const posts: BlogPost[] = [
         ]
     },
 ];
+
+
 
 
 
